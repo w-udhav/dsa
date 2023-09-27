@@ -1,4 +1,4 @@
-package leet;
+package leetcode;
 
 public class lengthOfLastWord {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package leet;
+package leetcode;
 // https://leetcode.com/problems/top-k-frequent-elements/
 
 import java.util.*;
