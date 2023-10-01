@@ -3,8 +3,9 @@ package stack;
 import java.util.Stack;
 
 class minStack {
-  Stack<Integer> s = new Stack<>();
-  int minEle;
+  Stack<Long> st = new Stack<>();
+  Stack<Long> s = new Stack<>();
+  long minEle;
 
   minStack() {
     minEle = Integer.MAX_VALUE;
@@ -12,12 +13,12 @@ class minStack {
 
   void push(int x) {
     if (s.isEmpty())
-      s.push(x);
+      s.push((long)x);
     else {
       if (x >= minEle)
-        s.push(x);
+        s.push((long)x);
       else {
-        s.push(2 * x - minEle);
+        st.push(2 * x - minEle);
         minEle = x;
       }
     }
