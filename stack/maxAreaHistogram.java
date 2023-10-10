@@ -61,11 +61,14 @@ public class maxAreaHistogram {
   }
 
   public static void main(String[] args) {
-    int[] arr = { 6, 2, 5, 4, 5, 1, 6 };
+    // int[] arr = { 6, 2, 5, 4, 5, 1, 6 };
+    int[] arr = { 2, 1, 5, 6, 2, 3 };
     ArrayList<Integer> right = new ArrayList<Integer>(nsr(arr, arr.length));
     ArrayList<Integer> left = new ArrayList<Integer>(nsl(arr, arr.length));
     ArrayList<Integer> area = new ArrayList<>();
     int ans = Integer.MIN_VALUE;
+
+    System.out.println("right: " + right);
 
     // Finding the width
     for (int i = 0; i < arr.length; i++) {
